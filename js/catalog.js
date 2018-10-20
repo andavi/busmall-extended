@@ -45,7 +45,6 @@ function addSelectedItemToCart() {
   var index = document.getElementById('items').value;
   var product = Product.allProducts[index];
   var quantity = document.getElementById('quantity').value;
-
   cart.addItem(product, quantity);
 }
 
@@ -65,9 +64,8 @@ function updateCartPreview() {
 
   var cartContents = document.getElementById('cartContents');
   var p = document.createElement('p');
-  p.textContent = ` item : ${product.name}, quantity: ${quantity}`;
+  p.textContent = `Item : ${product.name} | Quantity: ${quantity}`;
   cartContents.appendChild(p);
-
 }
 
 // Set up the "submit" event listener on the form.
