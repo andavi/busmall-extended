@@ -43,8 +43,10 @@ function addSelectedItemToCart() {
   // TODO: get the quantity
   // TODO: using those, add one item to the Cart
   var index = document.getElementById('items').value;
+  var product = Product.allProducts[index];
   var quantity = document.getElementById('quantity').value;
-  cart.addItem(Product.allProducts[index], quantity);
+
+  cart.addItem(product, quantity);
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
@@ -57,6 +59,15 @@ function updateCounter() {
 function updateCartPreview() {
   // TODO: Get the item and quantity from the form
   // TODO: Add a new element to the cartContents div with that information
+  var index = document.getElementById('items').value;
+  var product = Product.allProducts[index];
+  var quantity = document.getElementById('quantity').value;
+
+  var cartContents = document.getElementById('cartContents');
+  var p = document.createElement('p');
+  p.textContent = ` item : ${product.name}, quantity: ${quantity}`;
+  cartContents.appendChild(p);
+
 }
 
 // Set up the "submit" event listener on the form.
