@@ -4,12 +4,14 @@
 
 body {
     background-color:lightskyblue;
-
 }
 
-header h1{
+body>header h1{
     font-family: 'Monoton', cursive;    
     background-color: aquamarine;
+}
+
+h1{
     text-align: center;
     font-size: 30px;   
     padding: 30px;
@@ -22,10 +24,10 @@ span {
 }
 
 .copy {
-box-sizing: border-box;
-padding: 30px;    
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-text-align: center;
+    box-sizing: border-box;
+    padding: 30px;    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
 }
 
 header nav{
@@ -39,7 +41,7 @@ header nav{
 }
 
 header nav ul li {
-    color: blue;
+    color: white;
     display: inline-block; 
     margin-top: 30px;
 }
@@ -59,12 +61,6 @@ div .copy {
     margin-right: 40px;
 } */
 
-footer {
-position: absolute;
-bottom: 0;
-color: white;
-padding: 20px;
-}
 
 section div {
     position: relative;
@@ -73,9 +69,9 @@ section div {
 }
 
 #catalog {
-text-align: center;
-margin-bottom: 110px;
-font-size: 25px;
+    text-align: center;
+    margin-bottom: 110px;
+    font-size: 25px;
 }
 
 legend {
@@ -87,27 +83,28 @@ fieldset {
     margin-bottom: 30px;
 }
 
-p {position: relative;
+p {
+    position: relative;
    text-align: center; 
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#cart {
-margin-left: 200px;
-}
+/* #cart {
+    margin-left: 200px;
+} */
 
 .card header h1 {
-color: purple;
-font-size: 25px;
-margin: 40px;
-padding: 20px;
-margin-left: 100px;
-margin-right: 100px;
+    color: purple;
+    font-size: 25px;
+    margin: 40px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 div .copy {
-color: purple;
-margin-top: -60px;
+    color: purple;
+    margin-top: -60px;
 
 }
 
@@ -116,5 +113,29 @@ input {
 }
 
 table {
-padding: 10px;    
+    padding: 10px;    
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+#cart {
+    margin: auto;
+    width: 15%;
+    /* text-align: center; */
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    background-color: aquamarine;
 }

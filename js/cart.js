@@ -67,12 +67,15 @@ function removeItemFromCart(event) {
   event.preventDefault();
   event.stopPropagation();
 
-  var id = Number(event.target.id);
-  cart.removeItem(id);
-  cart.saveToLocalStorage();
-
-  clearCart();
-  showCart();
+  console.log(event.target.id);
+  if (event.target.id) {
+    var id = Number(event.target.id);
+    console.log(id);
+    cart.removeItem(id);
+    cart.saveToLocalStorage();
+    clearCart();
+    showCart();
+  }
 }
 
 // This will initialize the page and draw the cart on screen
