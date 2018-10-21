@@ -67,10 +67,8 @@ function removeItemFromCart(event) {
   event.preventDefault();
   event.stopPropagation();
 
-  console.log(event.target.id);
   if (event.target.id) {
     var id = Number(event.target.id);
-    console.log(id);
     cart.removeItem(id);
     cart.saveToLocalStorage();
     clearCart();

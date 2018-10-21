@@ -44,11 +44,12 @@ header nav ul li {
     color: white;
     display: inline-block; 
     margin-top: 30px;
+    margin-left: 10px;
 }
 
 div .copy {
     position: relative;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     box-sizing: border-box;
     font-size: 12px;
     margin-left: 40px;
@@ -70,7 +71,7 @@ section div {
 
 #catalog {
     text-align: center;
-    margin-bottom: 110px;
+    /* margin-bottom: 110px; */
     font-size: 25px;
 }
 
@@ -128,14 +129,18 @@ th, td {
 }
 
 main {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
-    color: white;
+    color: black;
     padding: 20px;
     background-color: aquamarine;
+}
+
+td {
+    text-align: center;
 }
