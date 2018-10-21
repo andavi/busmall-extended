@@ -1,1 +1,90 @@
 /* TODO: Make it awesome */
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+
+body {
+    background-color:lightskyblue;
+
+}
+
+header h1{
+    font-family: 'Monoton', cursive;    
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 30px;   
+}
+
+span {
+    margin-left: 15px;
+}
+
+.copy {
+box-sizing: border-box;
+padding: 30px;    
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header nav{
+    text-align: center;
+    font-size: 30px; 
+    margin: 20px;
+    padding: 30px;
+    background-color: goldenrod;
+}
+
+header nav ul li {
+    color: blue;
+    display: inline-block;  
+}
+
+footer {
+position: absolute;
+bottom: 0;
+color: white;
+padding: 20px;
+}
+
+section div {
+    position: relative;
+    /* margin-top: 40px; */
+    color: white;    
+}
+
+#catalog {
+text-align: center;
+margin-bot: 110px;
+font-size: 25px;
+}
+
+p {position: relative;
+   text-align: center; 
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#cart {
+margin-left: 200px;
+}
+
+.copy {
+text-align: center;
+}
+
+.card header h1 {
+color: purple;
+font-size: 25px;
+margin: 40px;
+padding: 20px;
+}
+
+div .copy {
+color: purple;
+
+}
+
+input {
+    color: purple;    
+}
+
+table {
+padding: 10px;    
+}
