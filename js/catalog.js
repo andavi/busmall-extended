@@ -29,12 +29,13 @@ function handleSubmit(event) {
   event.preventDefault();
   event.stopPropagation();
 
-  // Do all the things ...
-  addSelectedItemToCart();
-  cart.saveToLocalStorage();
-  updateCounter();
-  updateCartPreview();
-
+  if (document.getElementById('quantity').value){
+    // Do all the things ...
+    addSelectedItemToCart();
+    cart.saveToLocalStorage();
+    updateCounter();
+    updateCartPreview();
+  }
 }
 
 // TODO: Add the selected item and quantity to the cart
@@ -46,6 +47,7 @@ function addSelectedItemToCart() {
   var product = Product.allProducts[index];
   var quantity = document.getElementById('quantity').value;
   cart.addItem(product, quantity);
+
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
