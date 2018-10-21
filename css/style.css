@@ -9,6 +9,12 @@ body {
 body>header h1{
     font-family: 'Monoton', cursive;    
     background-color: aquamarine;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    margin-bottom: 300px;
+    z-index: 1;
 }
 
 h1{
@@ -17,7 +23,9 @@ h1{
     padding: 30px;
 }
 
-nav {}
+nav {
+    position: relative;
+}
 
 span {
     margin-left: 15px;
@@ -38,6 +46,7 @@ header nav{
     background-color: goldenrod;
     margin-left: 60px;
     margin-right: 60px;
+    margin-top: 100px;
 }
 
 header nav ul li {
@@ -90,10 +99,6 @@ p {
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* #cart {
-    margin-left: 200px;
-} */
-
 .card header h1 {
     color: purple;
     font-size: 25px;
@@ -125,17 +130,21 @@ th, td {
 #cart {
     margin: auto;
     width: 15%;
-    /* text-align: center; */
 }
 
 main {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
+
+
 footer {
-    position: relative;
+    position: fixed;
+    right: 0;
     bottom: 0;
+    left: 0;
     width: 100%;
+    text-align: center;
     color: black;
     padding: 20px;
     background-color: aquamarine;
